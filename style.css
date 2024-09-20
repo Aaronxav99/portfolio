@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family: "Sevillana", system-ui;   */
+    font-family: "Protest Guerrilla", sans-serif;
+
+  
+  }
+  #container{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+   
+     
+      
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    
+    
+  }
+  image{
+    width: 250px;
+    height: 150px;
+  }
+
+  .list-items{
+    list-style:none;
+    display: inline;
+    margin: 0px 20px;
+  }
+  .links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  .links:hover{
+    color: red;
+    text-decoration: underline;
+  }
+
+.homeContent{
+  margin: 13% 0px 0px 3%;
+}
+#username{
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif
+}
+#name{
+  font-family: fantasy;
+  color: rgb(145, 145, 45);
+}
+#userDetails{
+  line-height: 1.2;
+}
+#download{
+  text-decoration: none;
+  background-color: black;
+  color: beige;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.homeImage{
+  width: 45%;
+  height: 75%;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+.group1{
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 2s, left 1s;
+}
+.homeImage:hover #shape{
+  bottom: 50px;
+}
+.homeImage:hover #girl{
+  left: 30%;
+}
+#about{
+  margin:15% 8% 0px 8%;
+}
+.sectionHead{
+  text-align: center;
+  
+}
+.mainHead{
+  font-size: 30px;
+}
+.subHead{
+  font-size: 20px;
+  color: rgb(29, 64, 29);
+
+}
+.aboutBody{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 50px;
+}
+.img1{
+  width: 80%;
+}
+.aboutcontent{
+  font-size:20px ;
+  text-align: justify;
+  
+}
+.informations{
+  margin-top: 20px;
+}
+.infobox{
+  margin-bottom: 20px;
+}
+.infobox>span{
+  margin-left: 10px;
+}
+#sectskill{
+  margin: 8% 8% 20px 8%;
+
+}
+.skillsection{
+  text-align: center;
+  
+
+}
+.subskill{
+  color: green;
+  
+}
+/* under this is design of skillcpntents*/
+
+.skillContent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 3rem;
+  margin-top: 20px;
+
+}
+.bars{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 2px;
+}
+.mySkill{
+  width: 500px;
+}
+.barhead,.barPercent{
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.baseBar{
+  width: 100%;
+  height: 0.3rem;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  
+}
+.htmlbar
+{
+  background-color: orange;
+  width: 89%;
+}
+.cssbar{
+  background-color: orange;
+  width: 80%;
+}
+.jsbar{
+  background-color: orange;
+  width: 71%;
+}
+.reactbar{
+  background-color: orange;
+  width: 45%;
+}
+#contact{
+  margin: 8% 8% 0px 8%;
+  height: 250px;
+}
+.iconscollections{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.icons{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 40px;
+}
+.brands{
+  color: black;
+  font-size: 2rem;
+}
+.icons:hover{
+  background-image:linear-gradient(to left top, blue, red);
+ }
+ .icons:hover .brands{
+  color: aliceblue;
+  /*animations*/
+  animation: rotate 3s;
+
+
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(40deg);
+  }
+  20%{
+    transform: rotate(-40deg);
+  }
+  40%{
+    transform: rotate(40deg);
+  }
+  60%{
+    transform: rotate(-40deg);
+  }
+  80%{
+    transform: rotate(40deg);
+  }
+  100%{
+    transform: rotate(-40deg);
+  }
+}
+footer{
+  margin: 8% 0px 0px 8%;
+}
+#copyWrite{
+  text-align: center;
+  font-weight: 600;
+}
+#upArrow{
+  float:right ;
+  margin-top: -30px;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar{
+  background-color: azure;
+
+}
+ ::-webkit-scrollbar-thumb{
+  background-color: orange;
+ border-radius:10px ;
+}
